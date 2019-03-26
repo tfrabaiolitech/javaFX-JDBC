@@ -9,6 +9,7 @@ import javafx.scene.control.ScrollPane;
 import javafx.stage.Stage;
 
 
+
 public class Main extends Application {
 	
 	private static Scene mainScene; // expor referência para esse atributo
