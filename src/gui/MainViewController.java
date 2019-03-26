@@ -51,7 +51,7 @@ public class MainViewController implements Initializable {
 		VBox newVBox = loader.load(); //Abrir o recurso VBOX. Recebe o absoluteName
 		
 		//Mostrar a view dentro da Janela principal. Temos que buscar uma referencia da cena.
-		Scene mainScene = Main.getmainScene(); // referência da cena principal.
+		Scene mainScene = Main.getMainScene(); // referência da cena principal.
 		
 		                                     // O getRoot() pega o primeiro elemento da MainView. neste caso o ScrollPane
 		                                     // .getContent() pega o conteúdo do ScrollPane
@@ -67,7 +67,8 @@ public class MainViewController implements Initializable {
 		
 		}
 		catch(IOException e) {
-			Alerts.showAlert("alert title", "Alert header", "alert content", AlertType.ERROR); //Exceção caso apareça algum erro.
+			e.printStackTrace();
+			//Alerts.showAlert("alert title", "Alert header",e.getMessage(), AlertType.ERROR); //Exceção caso apareça algum erro.
 		}
 	}
 	
